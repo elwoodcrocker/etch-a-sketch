@@ -38,6 +38,8 @@ body {
     min-width:200px;
     border: 10px solid #77ff00;
     background-color: #e62f0f;
+    border-bottom-right-radius:10px; 
+    border-bottom-left-radius:10px;
 }
 
 .slide-section{
@@ -74,7 +76,6 @@ body {
     width:95%;
     background-color: #1f2937;
     padding:10px;
-
 }
 
 .output-div {
@@ -84,7 +85,8 @@ body {
     height: 400px;
     flex: 0 0 400px;
     border: 10px solid #77ff00;
-    
+    border-top-right-radius:10px; 
+    border-top-left-radius:10px;
 
 }
 

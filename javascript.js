@@ -7,6 +7,7 @@ let colorInput = document.getElementById("colorpicker").value;
 
 document.onload = createDiv(slider.value)
 outputDiv.addEventListener('mouseover',changeColor, false)
+
 document.getElementById('colorpicker').onchange = function (){
     colorInput = this.value;
 }

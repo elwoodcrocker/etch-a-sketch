@@ -2,14 +2,14 @@
 
 const outputDiv = document.querySelector('.output-div');
 let slider = document.getElementById('myRange');
-let color = document.getElementById("colorpicker").value;
+let colorInput = document.getElementById("colorpicker").value;
 
 
 document.onload = createDiv(slider.value)
-outputDiv.addEventListener('mouseover',changeColor(color), false)
+outputDiv.addEventListener('mouseover',changeColor, false)
 
 document.getElementById('colorpicker').onchange = function (){
-    changeColor(this.value);
+    colorInput = this.value;
 }
 document.getElementById('clear').onclick = function (){
     createDiv(slider.value);
@@ -18,7 +18,7 @@ document.getElementById('myRange').oninput = function(){
     createDiv(this.value)
 }
 document.getElementById('rainbow').onclick = function(){
-    changeColor(randomColor());
+    colorInput = randomColor();
                 
 }
 
@@ -50,12 +50,12 @@ function createDiv(input){
 }
    
 
-function changeColor(colorInput){
+function changeColor(){
 
 
     const pixel = document.querySelectorAll('.output-div > div').forEach(pixel => {
         pixel.addEventListener('mouseover',() => {
-            pixel.style.background = colorInput;
+            pixel.style.background = `${colorInput}`;
         })
         
     })

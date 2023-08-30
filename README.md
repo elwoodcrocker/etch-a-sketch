@@ -25,7 +25,7 @@ Plan
 
 Algorithm
 
-    1. Create a Drawing pad.
+done    1. Create a Drawing pad.
         
         Create 2 Divs.
             input - 
@@ -52,8 +52,18 @@ Algorithm
         Color Selection-black default
         Size slider bar
         Eraser Selection - White Default.
+            create a new pad with createDiv(slider.value)
+
+        Color Selection: 
 
 
+
+            document.getElementById('colorpicker').onchange = function (){
+    colorInput = this.value;
+}
+
+
+        
 
 
 

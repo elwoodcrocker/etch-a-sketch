@@ -1,15 +1,29 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./images/RubikPixels-Regular.ttf);
+}
+
 body {
     font-size: 16px;
     box-sizing: border-box;
     background-color: #111827;
+    color:aliceblue;
 }
+.title p {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-clip:text;
+    -webkit-background-clip: text;
+    font-family:myFirstFont;
+    font-size: 3em;
+    margin: 0px;
+    padding: 0px;
 
+}
 
 .container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap:;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -17,19 +31,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content:flex-start;
     background-color: #1f2937;
     padding: 10px;
     width: 400px;
-    height: 400px;
-    flex: 0 1 400px;
+    min-width:200px;
+    border: 10px solid #77ff00;
+    background-color: #e62f0f;
 }
 
 .slide-section{
-    width:100%;
+    width:95%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #1f2937;
+    padding:10px;
+}
+
+.slide-section p{
+    color:aliceblue;
+    margin:0px;
+
+    padding:10px;
+
 }
 
 .slide-container{
@@ -41,19 +66,35 @@ body {
     width:100%;
 }
 
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    width:95%;
+    background-color: #1f2937;
+    padding:10px;
+
+}
+
 .output-div {
     background-color: #1f2937;
     padding:10px;
     width: 400px;
     height: 400px;
     flex: 0 0 400px;
+    border: 10px solid #77ff00;
     
 
 }
 
-.output-div div {
-    background-color: white;
-    border: 0.5px solid #1f2937;
-
+.black-color {
+    background-color: black; 
 }
 
+.white-color {
+    background-color: white;
+    border-top: 0.5px solid #1f2937;
+    border-left: 0.5px solid #1f2937;
+
+}
